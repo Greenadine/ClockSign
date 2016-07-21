@@ -1,0 +1,53 @@
+main: com.greenadine.clocksign.ClockSign
+name: ClockSign
+version: 1.8
+load: STARTUP 
+database: false
+author: Greenadine
+website: http://dev.bukkit.org/bukkit-plugins/clocksign/
+description: Create signs that show time.
+
+commands:
+    clocksign:
+        description: ClockSign managing command.
+        aliases: [cs, clock]
+permissions:
+    clocksign.*:
+        description: Gives access to all ClockSign commands and clocktypes.
+        default: op
+        children:
+            clocksign.commands.command: true
+            clocksign.commands.save: true
+            clocksign.commands.load: true
+            clocksign.commands.reload: true
+            clocksign.clocks.game: true
+            clocksign.clocks.real: true
+            clocksign.clocks.player: true
+    clocksign.clocks.*:
+        description: Gives access to placing all clocktypes.
+        default: op
+        children:
+            clocksign.clocks.game: true
+            clocksign.clocks.real: true
+            clocksign.clocks.player: true
+    clocksign.commands.command:
+        description: Gives access to the ClockSign command.
+        default: false
+    clocksign.commands.save:
+        description: Gives access to save all clocks to file.
+        default: false
+    clocksign.commands.load:
+        description: Gives access to load all clocks from file.
+        default: false
+    clocksign.commands.reload:
+        description: Gives access to reload plugin's configuration file.
+        default: false
+    clocksign.clocks.game:
+        description: Gives access to create [gameclock] clocks.
+        default: false
+    clocksign.clocks.real:
+        description: Gives access to create [realclock] clocks.
+        default: false
+    clocksign.clocks.player:
+        description: Gives access to create [playerclock] clocks.
+        default: false
