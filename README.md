@@ -6,5 +6,5 @@ ClockSign is a Minecraft server plugin that enables a player to create signs tha
 * Display in-real-life timezones' time on signs.
 
 # Support
-For any questions, suggestions, errors and bugs you might have, go to our BukkitDev page @ http://dev.bukkit.org/bukkit-plugins/clocksign, and go to the Issues page to post a ticket.
+For any questions, suggestions, errors and bugs you might have, go to my BukkitDev page @ http://dev.bukkit.org/bukkit-plugins/clocksign, and go to the Issues page to post a ticket.
 
